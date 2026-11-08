@@ -7763,6 +7763,43 @@
       "product": "相乘（每席最低计 0）",
       "category-min": "按类别取最小",
       "total-min": "按总分取最小"
-    }
+    },
+    "entry": "组队模式",
+    "multihandEntry": "分身模式",
+    "mode": {
+      "team": "组队模式",
+      "multihand": "分身模式"
+    },
+    "teamHint": "每人操作一个座位，按队伍计分决定胜负。",
+    "multihandHint": "每人操作自己队伍的全部座位。",
+    "seatsPerTeam": "每队席位数",
+    "seatsOption": "{count} 席",
+    "configuration": "{teams} 队 × 每队 {seats} 席",
+    "seating": {
+      "separated": "隔开",
+      "random": "全随机"
+    },
+    "seatingHint": "开局时按排布规则分配座位号。",
+    "visibility": {
+      "shared": "队友手牌和私有卡牌状态公开",
+      "private": "各自的私有信息不公开"
+    },
+    "waitingTitle": "队伍",
+    "seatsFilled": "已占 {current}/{max} 席",
+    "occupiesSeats": "操作 {count} 个座位",
+    "yourTeam": "你的队伍",
+    "chooseTeam": "选择队伍",
+    "joinTeam": "加入{team}",
+    "full": "已满员",
+    "host": "房主",
+    "moveMember": "为 {player} 调整队伍",
+    "start": "开始游戏",
+    "startNeedsFull": "各队满员后即可开局。",
+    "waitingForHost": "等待房主开局。",
+    "changeFailed": "调整队伍失败，请重试。",
+    "startFailed": "开局失败，请重试。",
+    "scoringLabel": "队伍计分",
+    "seatingLabel": "座位排布",
+    "visibilityLabel": "队友可见性"
   }
 }

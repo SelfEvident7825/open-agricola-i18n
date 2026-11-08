@@ -4885,6 +4885,43 @@
       "product": "Product (minimum 0 per seat)",
       "category-min": "Minimum in each category",
       "total-min": "Lowest seat total"
-    }
+    },
+    "entry": "Team game",
+    "multihandEntry": "Multihand game",
+    "mode": {
+      "team": "Team",
+      "multihand": "Multihand"
+    },
+    "teamHint": "Each player controls one seat. Team scores decide the result.",
+    "multihandHint": "Each player controls every seat on their team.",
+    "seatsPerTeam": "Seats per team",
+    "seatsOption": "{count} seats",
+    "configuration": "{teams} teams × {seats} seats",
+    "seating": {
+      "separated": "Separated",
+      "random": "Fully random"
+    },
+    "seatingHint": "Seat numbers are assigned when the game starts.",
+    "visibility": {
+      "shared": "Shared hands and private card state",
+      "private": "Keep each player's private information separate"
+    },
+    "waitingTitle": "Teams",
+    "seatsFilled": "{current}/{max} seats filled",
+    "occupiesSeats": "Controls {count} seats",
+    "yourTeam": "Your team",
+    "chooseTeam": "Choose a team",
+    "joinTeam": "Join {team}",
+    "full": "Full",
+    "host": "Host",
+    "moveMember": "Move {player} to a team",
+    "start": "Start game",
+    "startNeedsFull": "Fill every team to start.",
+    "waitingForHost": "Waiting for the host to start.",
+    "changeFailed": "Could not change teams. Please try again.",
+    "startFailed": "Could not start the game. Please try again.",
+    "scoringLabel": "Team scoring",
+    "seatingLabel": "Seat arrangement",
+    "visibilityLabel": "Teammate visibility"
   }
 }
