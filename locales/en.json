@@ -4922,6 +4922,12 @@
     "startFailed": "Could not start the game. Please try again.",
     "scoringLabel": "Team scoring",
     "seatingLabel": "Seat arrangement",
-    "visibilityLabel": "Teammate visibility"
+    "visibilityLabel": "Teammate visibility",
+    "operatingSeat": "Acting as seat {number}: {player}",
+    "pendingSeats": "Your pending seats",
+    "choosePendingSeat": "Choose a seat to handle",
+    "handleSeat": "Handle seat {number}: {player}",
+    "viewOwnHand": "View your hand",
+    "seatLabel": "Seat {number}: {player}"
   }
 }

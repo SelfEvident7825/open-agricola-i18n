@@ -7800,6 +7800,12 @@
     "startFailed": "开局失败，请重试。",
     "scoringLabel": "队伍计分",
     "seatingLabel": "座位排布",
-    "visibilityLabel": "队友可见性"
+    "visibilityLabel": "队友可见性",
+    "operatingSeat": "当前操作座位 {number}：{player}",
+    "pendingSeats": "待处理的座位",
+    "choosePendingSeat": "选择要处理的座位",
+    "handleSeat": "处理座位 {number}：{player}",
+    "viewOwnHand": "查看自己的手牌",
+    "seatLabel": "座位 {number}：{player}"
   }
 }
