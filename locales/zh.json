@@ -7750,5 +7750,19 @@
     },
     "actionCompleted": "行动已完成，准备好后点击继续。",
     "workshopRequiresCommunity": "请开启社区卡以使用已选工坊卡，或取消这些选卡。"
+  },
+  "team": {
+    "name": "队伍 {number}",
+    "rank": "第 {rank} 名",
+    "score": "队伍分",
+    "members": "座位明细",
+    "counted": "计入队伍分",
+    "productFactor": "{name}：{before} → {after}",
+    "scoring": {
+      "sum": "相加",
+      "product": "相乘（每席最低计 0）",
+      "category-min": "按类别取最小",
+      "total-min": "按总分取最小"
+    }
   }
 }

@@ -4872,5 +4872,19 @@
     },
     "actionCompleted": "Action completed. Continue when ready.",
     "workshopRequiresCommunity": "Enable community cards to use the selected Workshop cards, or deselect them."
+  },
+  "team": {
+    "name": "Team {number}",
+    "rank": "Rank {rank}",
+    "score": "Team score",
+    "members": "Seat details",
+    "counted": "Counted for the team",
+    "productFactor": "{name}: {before} → {after}",
+    "scoring": {
+      "sum": "Sum",
+      "product": "Product (minimum 0 per seat)",
+      "category-min": "Minimum in each category",
+      "total-min": "Lowest seat total"
+    }
   }
 }
