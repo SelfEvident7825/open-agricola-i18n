@@ -1555,6 +1555,27 @@
     "actionReference": {
       "unavailable": "预览加载失败，请关闭后重新打开。",
       "invalid": "行动引用目标无效，请检查目标标识。"
+    },
+    "marketplace": {
+      "prompt": "与队友转移货物",
+      "direction": "方向",
+      "give": "给出",
+      "take": "拿取",
+      "teammate": "队友",
+      "quantity": "数量",
+      "tax": "给出方另付 {count} 个",
+      "confirm": "确认转移",
+      "emptySelection": "请至少选择一种要转移的货物。",
+      "insufficientGoods": "给出方的货物不足以支付转移数量和税。",
+      "goods": "货物",
+      "none": "不转移",
+      "giverPays": "{giver} 支付 {goods}，另付 {tax} 税"
+    },
+    "targetFarm": {
+      "prompt": "选择这次建造的农场",
+      "own": "自己的农场",
+      "partner": "{player} 的农场",
+      "confirm": "在此农场建造"
     }
   },
   "moor": {
@@ -2147,6 +2168,10 @@
     "spend-worker": {
       "description": "花费 1 名农夫",
       "name": "花费农夫"
+    },
+    "marketplace": {
+      "name": "集市",
+      "description": "与队友互相转移货物。每种货物由给出方另付 1 个同种货物。"
     }
   },
   "improvements": {
@@ -6706,7 +6731,13 @@
     "specialEffectFail": "特殊效果失败",
     "collectNoSpace": "没有可拿取资源的行动格",
     "collectNotEnough": "行动格资源不足",
-    "collectInvalidPartial": "部分拿取资源参数无效"
+    "collectInvalidPartial": "部分拿取资源参数无效",
+    "marketplaceTransfer": "{giver} 给 {receiver} {goods}，{giver} 另付 {tax}",
+    "partnerRoomsBuiltWood": "{player} 替 {owner} 建了 {count} 间木房间",
+    "partnerRoomsBuiltClay": "{player} 替 {owner} 建了 {count} 间泥房间",
+    "partnerRoomsBuiltStone": "{player} 替 {owner} 建了 {count} 间石房间",
+    "partnerStablesBuilt": "{player} 替 {owner} 建了 {count} 个畜栏",
+    "partnerFencesBuilt": "{player} 替 {owner} 建了 {count} 段围栏"
   },
   "platform": {
     "retention": {
@@ -7806,7 +7837,12 @@
     "choosePendingSeat": "选择要处理的座位",
     "handleSeat": "处理座位 {number}：{player}",
     "viewOwnHand": "查看自己的手牌",
-    "seatLabel": "座位 {number}：{player}"
+    "seatLabel": "座位 {number}：{player}",
+    "cooperationRules": "官方协作规则",
+    "cooperationEnabled": "协作规则已开启",
+    "cooperationDisabled": "协作规则已关闭",
+    "cooperationBadge": "协作规则",
+    "cooperationHint": "可在集市转移货物，也可替队友建房间、畜栏或围栏。"
   },
   "beta": {
     "badge": "Beta",

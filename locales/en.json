@@ -1555,6 +1555,27 @@
     "actionReference": {
       "unavailable": "Preview could not load. Close and open it to retry.",
       "invalid": "Unknown action reference. Check the target identifier."
+    },
+    "marketplace": {
+      "prompt": "Transfer goods with teammates",
+      "direction": "Direction",
+      "give": "Give",
+      "take": "Take",
+      "teammate": "Teammate",
+      "quantity": "Quantity",
+      "tax": "Giver pays {count} extra",
+      "confirm": "Confirm transfers",
+      "emptySelection": "Choose at least one kind of goods to transfer.",
+      "insufficientGoods": "The giver needs enough goods for the transfer and the tax.",
+      "goods": "Goods",
+      "none": "No transfer",
+      "giverPays": "{giver} pays {goods} and {tax} tax"
+    },
+    "targetFarm": {
+      "prompt": "Choose the farm for this build",
+      "own": "Your farm",
+      "partner": "{player}'s farm",
+      "confirm": "Build on this farm"
     }
   },
   "moor": {
@@ -2147,6 +2168,10 @@
     "spend-worker": {
       "description": "Spend 1 worker",
       "name": "Spend Worker"
+    },
+    "marketplace": {
+      "name": "Marketplace",
+      "description": "Transfer goods to or from teammates. For each kind of goods, the giver pays 1 extra of the same kind."
     }
   },
   "improvements": {
@@ -3828,7 +3853,13 @@
     "specialEffectFail": "Special effect failed",
     "collectNoSpace": "No space to collect from",
     "collectNotEnough": "Not enough resources on space",
-    "collectInvalidPartial": "Invalid partial collect payload"
+    "collectInvalidPartial": "Invalid partial collect payload",
+    "marketplaceTransfer": "{giver} gives {receiver} {goods} and pays {tax} extra",
+    "partnerRoomsBuiltWood": "{player} builds {count} wooden rooms for {owner}",
+    "partnerRoomsBuiltClay": "{player} builds {count} clay rooms for {owner}",
+    "partnerRoomsBuiltStone": "{player} builds {count} stone rooms for {owner}",
+    "partnerStablesBuilt": "{player} builds {count} stables for {owner}",
+    "partnerFencesBuilt": "{player} builds {count} fences for {owner}"
   },
   "platform": {
     "retention": {
@@ -4928,7 +4959,12 @@
     "choosePendingSeat": "Choose a seat to handle",
     "handleSeat": "Handle seat {number}: {player}",
     "viewOwnHand": "View your hand",
-    "seatLabel": "Seat {number}: {player}"
+    "seatLabel": "Seat {number}: {player}",
+    "cooperationRules": "Official cooperation rules",
+    "cooperationEnabled": "Cooperation rules on",
+    "cooperationDisabled": "Cooperation rules off",
+    "cooperationBadge": "Cooperation rules",
+    "cooperationHint": "Transfer goods at the Marketplace and build rooms, stables or fences for a teammate."
   },
   "beta": {
     "badge": "Beta",
