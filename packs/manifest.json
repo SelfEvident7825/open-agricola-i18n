@@ -7,14 +7,14 @@
       "name": "English",
       "file": "en.09162105741ab822.json",
       "sha256": "09162105741ab822a74168cc5acdd476ce2d919503eb88c4b9edb2cf83c45a86",
-      "sourceSha256": "d88b482d16868095ea4bd1cc571df2c368c9ed1d9dbf6e99fd9c10390a71e3e4"
+      "sourceSha256": "cf535208cee7d2e13b7d5692c05f66d235e5013d319c13bb30b46d0dfb4edd80"
     },
     {
       "id": "zh",
       "name": "简体中文",
       "file": "zh.510c649cc47f4ca9.json",
       "sha256": "510c649cc47f4ca969df154b930b4896356eb91fcb7d81378826e33021e9b1ce",
-      "sourceSha256": "9d0386cc8ff94372d083b7c1baa6c2b90142aa299bb6b09f00a873db71272c21"
+      "sourceSha256": "399c4913c9982390c437b023417ae381b36320afbb1271574f4c14cc0d85af52"
     }
   ]
 }
