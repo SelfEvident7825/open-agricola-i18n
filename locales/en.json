@@ -141,6 +141,14 @@
     "roundLocked": "Locked",
     "farmTitle": "Player Farm",
     "publicFarms": "Public farms",
+    "sectionNav": {
+      "hand": "Hand",
+      "farm": "Farm",
+      "publicFarms": "Others",
+      "seasons": "Seasons",
+      "moor": "Special",
+      "majorSupply": "Majors"
+    },
     "startPlayer": "Start Player",
     "openingOrder": "Opening turn order",
     "you": "You",
@@ -1475,13 +1483,36 @@
         "majorStandard": "Standard Major Improvements",
         "major56": "5–6 Player Major Improvements",
         "majorMoor": "Moor Major Improvements",
-        "moor": "Farmers of the Moor"
+        "moor": "Farmers of the Moor",
+        "CBI": "Classic BI Deck",
+        "CC": "Classic C Deck",
+        "CE": "Classic E Deck",
+        "CFL": "Classic FL Deck",
+        "CFR": "Classic FR Deck",
+        "CG": "Classic G Deck",
+        "CI": "Classic I Deck",
+        "CK": "Classic K Deck",
+        "CNL": "Classic NL Deck",
+        "CO": "Classic O Deck",
+        "CPI": "Classic PI Deck",
+        "CWA": "Classic WA Deck",
+        "CWM": "Classic WM Deck",
+        "CZ": "Classic Z Deck"
       },
       "types": {
         "major": "Major Improvement",
         "moorSpecialAction": "Moor Special Action",
         "moorStart": "Starting Terrain",
-        "season": "Season Rule"
+        "season": "Season Rule",
+        "illustratedAction": "Illustrated Action",
+        "spaceMerchant": "Space Merchant",
+        "alienArtifact": "Alien Artifact",
+        "alienEvent": "Alien Event",
+        "event": "Event",
+        "globalEvent": "Opening Event",
+        "offspring": "Offspring",
+        "guest": "Guest",
+        "expansionRules": "Rules"
       },
       "results": {
         "count": "Results: {count}",
@@ -1542,6 +1573,10 @@
         "name": "Starting Terrain {number}",
         "layout": "Starting terrain layout"
       },
+      "scanFace": {
+        "offspringAssign": "Assign\nto an\nOff-\nspring",
+        "globalEventFooter": "At the start of the game, select an event card and turn it face up; it affects all players."
+      },
       "icons": {
         "score": "Points"
       },
@@ -1555,7 +1590,34 @@
     "actionReference": {
       "unavailable": "Preview could not load. Close and open it to retry.",
       "invalid": "Unknown action reference. Check the target identifier."
-    }
+    },
+    "marketplace": {
+      "prompt": "Transfer goods with teammates",
+      "direction": "Direction",
+      "give": "Give",
+      "take": "Take",
+      "teammate": "Teammate",
+      "quantity": "Quantity",
+      "tax": "Giver pays {count} extra",
+      "confirm": "Confirm transfers",
+      "emptySelection": "Choose at least one kind of goods to transfer.",
+      "insufficientGoods": "The giver needs enough goods for the transfer and the tax.",
+      "goods": "Goods",
+      "none": "No transfer",
+      "giverPays": "{giver} pays {goods} and {tax} tax"
+    },
+    "targetFarm": {
+      "prompt": "Choose the farm for this build",
+      "own": "Your farm",
+      "partner": "{player}'s farm",
+      "confirm": "Build on this farm"
+    },
+    "harvestRequirementsTitle": "Next harvest · Round {round}",
+    "harvestRequirementsFood": "Feeding requires {count} food",
+    "harvestRequirementsFuel": "Heating requires {count} fuel",
+    "harvestRequirementsHint": "Based on your current family, house and played cards.",
+    "interactionChooseFamilyGrowth": "Choose how to grow your family",
+    "interactionGrowNewborn": "Add a newborn family member"
   },
   "moor": {
     "specialActions": {
@@ -2147,6 +2209,10 @@
     "spend-worker": {
       "description": "Spend 1 worker",
       "name": "Spend Worker"
+    },
+    "marketplace": {
+      "name": "Marketplace",
+      "description": "Transfer goods to or from teammates. For each kind of goods, the giver pays 1 extra of the same kind."
     }
   },
   "improvements": {
@@ -3007,6 +3073,12 @@
     },
     "M130_Nosebag": {
       "description": "Each time you use the __space:grain-seeds|Grain Seeds__ action space, you also get 1 <HORSE>."
+    },
+    "CI097_Slaughterhouse": {
+      "name": "Slaughterhouse",
+      "description": "Whenever another player converts at least 1 animal into <food>, you receive 1 <food>. During the feeding phase of each harvest, you feed after the other players.",
+      "rules": "If both __Slaughterman__ and __Slaughterhouse__ are in play, their owners feed in their normal relative turn order.",
+      "prerequisite": ""
     }
   },
   "occupations": {
@@ -3695,6 +3767,12 @@
     },
     "E160_KelpGatherer": {
       "description": "Each time another player uses the __space:fishing|Fishing__ accumulation space, they get 1 additional <FOOD> and you get 1 <VEGETABLE>."
+    },
+    "CE203_Shepherd": {
+      "name": "Shepherd",
+      "description": "During each breeding phase, if you have at least 4 <sheep>, your <sheep> produce 2 offspring instead of 1.",
+      "rules": "",
+      "prerequisite": ""
     }
   },
   "log": {
@@ -3828,7 +3906,13 @@
     "specialEffectFail": "Special effect failed",
     "collectNoSpace": "No space to collect from",
     "collectNotEnough": "Not enough resources on space",
-    "collectInvalidPartial": "Invalid partial collect payload"
+    "collectInvalidPartial": "Invalid partial collect payload",
+    "marketplaceTransfer": "{giver} gives {receiver} {goods} and pays {tax} extra",
+    "partnerRoomsBuiltWood": "{player} builds {count} wooden rooms for {owner}",
+    "partnerRoomsBuiltClay": "{player} builds {count} clay rooms for {owner}",
+    "partnerRoomsBuiltStone": "{player} builds {count} stone rooms for {owner}",
+    "partnerStablesBuilt": "{player} builds {count} stables for {owner}",
+    "partnerFencesBuilt": "{player} builds {count} fences for {owner}"
   },
   "platform": {
     "retention": {
@@ -4413,7 +4497,13 @@
       "terminated": "The players ended this game.",
       "removed": "This game is no longer available for spectating.",
       "replay": "View replay"
-    }
+    },
+    "publicSandboxTitle": "Public card sandbox",
+    "publicSandboxDescription": "Test official cards and published public cards. Card design and publishing stay on the main site.",
+    "sandboxExecutionMode": "Run game",
+    "sandboxBrowserMode": "In this browser",
+    "sandboxServerMode": "On the server",
+    "publicSandboxPaused": "This playtest is paused. Check access and card availability before continuing."
   },
   "cards": {
     "D051_Archway": {
@@ -4523,6 +4613,16 @@
     },
     "E022_GuestRoom": {
       "storeFood": "Choose how much food to store on Guest Room"
+    },
+    "CI239_CornProteer": {
+      "offer": "Buy the offered grain or decline",
+      "buy": "Offer to buy",
+      "buyDisabled": "Not enough food",
+      "decline": "Decline",
+      "chooseBuyer": "Choose a buyer for the grain"
+    },
+    "CI223_HarvestHelper": {
+      "field": "{player}: take one grain from field ({row}, {col}) {card}"
     }
   },
   "fence": {
@@ -4915,6 +5015,7 @@
     "full": "Full",
     "host": "Host",
     "moveMember": "Move {player} to a team",
+    "swapWith": "Swap with {player} ({team})",
     "start": "Start game",
     "startNeedsFull": "Fill every team to start.",
     "waitingForHost": "Waiting for the host to start.",
@@ -4928,7 +5029,12 @@
     "choosePendingSeat": "Choose a seat to handle",
     "handleSeat": "Handle seat {number}: {player}",
     "viewOwnHand": "View your hand",
-    "seatLabel": "Seat {number}: {player}"
+    "seatLabel": "Seat {number}: {player}",
+    "cooperationRules": "Official cooperation rules",
+    "cooperationEnabled": "Cooperation rules on",
+    "cooperationDisabled": "Cooperation rules off",
+    "cooperationBadge": "Cooperation rules",
+    "cooperationHint": "Transfer goods at the Marketplace and build rooms, stables or fences for a teammate."
   },
   "beta": {
     "badge": "Beta",
@@ -4949,8 +5055,100 @@
     "noMatches": "No matching players.",
     "noGrants": "No beta access has been granted.",
     "revokeTitle": "Revoke beta access",
-    "revokeConfirm": "Revoke beta access for @{username}? This takes effect immediately. Existing team rooms are not affected.",
+    "revokeConfirm": "Revoke beta access for @{username}? Prerelease access will stop within 30 seconds. Saved games and other state will be retained.",
     "accountNotFound": "This account does not exist.",
-    "adminAutomatic": "Admins have beta access automatically."
-  }
+    "adminAutomatic": "Admins have beta access automatically.",
+    "revokeConfirmImmediate": "Revoke beta access for @{username}? This takes effect immediately. Existing team rooms are not affected."
+  },
+  "prerelease": {
+    "entry": "Enter prerelease",
+    "entryHint": "Opens the prerelease site in a new tab. Your production tab stays open.",
+    "unavailable": "Prerelease is not available yet. Please try again later.",
+    "connecting": "Checking your access to prerelease…",
+    "handoffTitle": "Entering prerelease",
+    "handoffInvalid": "This entry link is invalid or expired. Return to production and enter prerelease again.",
+    "accessExpired": "Your login or Beta access is no longer valid. Return to production to sign in and enter again.",
+    "returnToProduction": "Return to production",
+    "environment": "Prerelease",
+    "version": "Prerelease {version}",
+    "readOnlySandbox": "Read-only card testing",
+    "readOnlySandboxHint": "Test candidate official cards and published public cards. Designing and publishing cards is available on production.",
+    "maintenance": "Prerelease is under maintenance. Your confirmed game progress is retained.",
+    "reset": "The prerelease test environment was reset. Return to production and enter again.",
+    "archiveRetention": "Prerelease results and replays remain available for up to {days} days. A reset or environment closure can remove them earlier.",
+    "sessionExpiry": "Your prerelease session expires by {date}.",
+    "accessPaused": "Access is paused while account status cannot be confirmed. Please try again later.",
+    "readonlyError": "This action is unavailable in the read-only prerelease workshop."
+  },
+  "feedback": {
+    "inbox": "Inbox",
+    "unreadLabel": "Inbox, {count} unread",
+    "empty": "No messages yet.",
+    "unread": "Unread",
+    "read": "Read",
+    "back": "Back to messages",
+    "more": "Older messages",
+    "confirmedBug": "Bug confirmed",
+    "reportLink": "View issue #{number}",
+    "adminTitle": "Bug report feedback",
+    "issueNumber": "GitHub issue number",
+    "findReport": "Find report",
+    "summary": "Report summary",
+    "explanation": "Explanation for the reporter",
+    "confirmBug": "Confirm bug and notify",
+    "saved": "Feedback sent to the reporter.",
+    "reportNotFound": "No submitted bug report matches this issue.",
+    "conflict": "This report changed. Find it again to review the latest feedback.",
+    "failed": "Could not load or save feedback. Please try again.",
+    "retry": "Try again",
+    "noFeedback": "This report has no feedback yet.",
+    "adminHint": "Find a submitted report, record an assessment, and explain it to the reporter. Reassess the report after the requested information is added.",
+    "kindLabel": "Assessment",
+    "notBug": "Not a bug",
+    "needsInfo": "More information needed · awaiting assessment",
+    "missingItems": "Missing information",
+    "missingItemsInput": "Specific missing items (one per line)",
+    "needsInfoHint": "List the actual details missing from this report. The report stays unconfirmed until a maintainer reassesses it.",
+    "githubAccountHint": "You can read the public issue without a GitHub account. Adding information on GitHub requires an account.",
+    "sendAssessment": "Send assessment and notify",
+    "notBugHint": "Explain the applicable rule, normal behavior or why this is an improvement suggestion.",
+    "reloadReport": "Reload latest assessment",
+    "fixTitle": "Fix and duplicate reports",
+    "fixHint": "Register only PRs that complete this fix. Related PRs and diagnostics changes are not evidence of a fix. Release notifications require verified production evidence.",
+    "fixUnlinked": "No verified fix linked.",
+    "fixPending": "Fix linked, awaiting verified production release.",
+    "fixRoot": "Root issue #{number}",
+    "fixVersion": "Fix revision {version}",
+    "fixPullRequests": "Required merged fix PRs",
+    "fixCommits": "Actual merged commit SHAs",
+    "fixPR": "Fix PR number",
+    "fixCommitHint": "Enter every required full commit SHA, separated by spaces or commas. Use the actual merged commits, including after a rebase.",
+    "fixAddPR": "Add another fix PR",
+    "fixSave": "Verify and save fix",
+    "fixSaved": "Fix association saved. The system checks retained production evidence for release notifications.",
+    "duplicateRoot": "Duplicate of root issue number",
+    "duplicateSave": "Link duplicate report",
+    "duplicateSaved": "Duplicate linked. The system checks retained production evidence for release notifications.",
+    "fixReports": "Reports for this root",
+    "fixInvalid": "The association is invalid. Check the confirmed conclusions, root, complete commit SHAs and specific fix summary.",
+    "fixEvidence": "GitHub could not verify the merged fix. Check the project, PR and actual merged commits, then retry.",
+    "fixConflict": "This association changed. Find the report again before saving.",
+    "fixUnavailable": "A reporter is unavailable; the association was not changed.",
+    "fixEditRoot": "Edit required fix PRs from the root report.",
+    "fixRemovePR": "Remove PR",
+    "fixReleased": "Fix verified in production",
+    "releaseKind": "Fix is live",
+    "firstVerifiedRelease": "First verified in {version}",
+    "currentProductionRelease": "Production version at verification: {version}",
+    "releaseLink": "View release {version}",
+    "relatedReports": "Related reports",
+    "releaseExplanation": "The complete fix was verified in the running frontend and backend. Thank you for reporting this bug.",
+    "historicalFirstIncluded": "First included in {version}",
+    "fixSummary": "Fix summary"
+  },
+  "cards.CI236_HideFarmer.markSpaces.description": "Pay food so unused farmyard spaces do not lose points.",
+  "cards.CI236_HideFarmer.markSpaces.name": "Hide unused spaces",
+  "ui.cards.CI236_HideFarmer.markSpaces.prompt": "Choose how many food to pay for unused farmyard spaces",
+  "ui.cards.CI236_HideFarmer.optional": "Hide unused farmyard spaces?",
+  "cards.CI236_HideFarmer.markSpaces.invalid": "Invalid food count"
 }

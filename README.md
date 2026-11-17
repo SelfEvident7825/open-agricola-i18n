@@ -20,6 +20,28 @@ AGRICOLA_GAME_DIR=../open-agricola pnpm exec tsx scripts/import-bga-card-transla
 
 工坊未发布内容的翻译属于用户卡牌数据；在预览、房间或回放的展示入口转换为同样的文本结构，不能覆盖全局官方包。
 
+## 旧版卡牌命名与英文来源
+
+旧版 ID 使用 `C` + 原牌组 + 三位卡号 + 英文名，例如 `CE203_Shepherd`、
+`CI097_Slaughterhouse`。译文键和 `{card:...}` 引用使用同一 ID；图鉴牌组名称
+维护于 `ui.encyclopedia.groups.CE` 等键，与新版 E 包分开。
+
+旧牌导入记录共 1,024 张，其中 1,010 张保留在中文源；14 张 PI 牌的英文牌面
+与其旧版 ID 不匹配（例如 `CPI001_Alchemist` 的牌面是 Museum Caretaker），
+原样保留在 `reference/classic-unverified-zh.json`，核对原卡后才能恢复到语言包。
+英文源目前只保留两个应用 PR 中已核对的
+牧羊人和屠宰场牌面；其余 1,022 张暂缓英文录入，不能把中文复制到英文源，
+也不能仅凭旧 ID 的英文后缀猜测牌面内容。已有导入数据中部分 PI 牌名与 ID
+后缀不同，因此原本是英文的那些条目也需核对原牌后再恢复。
+
+带 `{card:CI239_CornProteer}` 引用的两个 `ui.cards` 提示暂不收录：当前两个
+应用 PR 都没有迁入小麦奸商，应用无法解析该卡名引用。待该卡实现进入消费分支
+后再恢复提示；已有中文牌面及不含卡名引用的交互文案继续保留。
+
+语言包应使用实际消费分支生成的 `public/cards-manifest.json` 构建。
+合入应用前，先合入并验证语言 PR，再将应用 `i18n.ref` 固定到语言仓库 main 的
+对应提交及 `packs/manifest.json` 校验和。这里的文案不启用旧版游戏选项。
+
 ## 牌面行动引用
 
 明确指向行动格或沼泽特殊行动的名称使用带目标的标记：
